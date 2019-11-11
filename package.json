@@ -1,0 +1,50 @@
+{
+  "name": "yybyl",
+  "version": "3.0.0",
+  "description": "云烟别摇了",
+  "main": "lib/yybyl.js",
+  "scripts": {
+    "prebuild:js": "rimraf ./lib",
+    "build": "cross-env NODE_ENV=production APP_ENV=js rollup -c",
+    "dev": "cross-env NODE_ENV=development rollup -c -w",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfdm/yybyl.git"
+  },
+  "author": "Jikkai Xiao <sonne@asaki.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gfdm/yybyl/issues"
+  },
+  "homepage": "https://github.com/gfdm/yybyl#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-eslint": "^10.0.2",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.1.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-friendly-formatter": "^4.0.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-svelte3": "^2.7.3",
+    "rimraf": "^3.0.0",
+    "rollup": "^1.26.5",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-commonjs": "^10.0.2",
+    "rollup-plugin-eslint": "^7.0.0",
+    "rollup-plugin-livereload": "^1.0.1",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-replace": "^2.2.0",
+    "rollup-plugin-serve": "^1.0.1",
+    "rollup-plugin-svelte": "^5.1.0",
+    "rollup-plugin-uglify": "^6.0.2",
+    "svelte": "^3.13.0"
+  }
+}
